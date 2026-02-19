@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F4F3EE;
+  --foreground: #1A1A1A;
+  --primary: #FF1F3D;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F0F0EC;
+  --secondary-foreground: #1A1A1A;
+  --muted: #F0F0EC;
+  --muted-foreground: #6B6B6B;
+  --accent: #FF1F3D;
+  --accent-foreground: #FFFFFF;
+  --border: #E0E0DC;
+  --ring: #FF1F3D;
+  --card: #FFFFFF;
+  --card-foreground: #1A1A1A;
+  --destructive: #ff4444;
+  --destructive-foreground: #ffffff;
+  --input: #E0E0DC;
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-input: var(--input);
+  --color-neon: #FF1F3D;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --animate-star-rotate: star-rotate 6s linear infinite;
+}
+
+@keyframes star-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans, system-ui, sans-serif);
+}
+
+::selection {
+  background: rgba(255, 31, 61, 0.2);
+  color: #1A1A1A;
+}

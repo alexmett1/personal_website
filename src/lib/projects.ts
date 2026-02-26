@@ -42,4 +42,11 @@ export const projects: Project[] = [
     stack: ["Next.js", "OpenAI API", "Stripe", "Clerk"],
     liveUrl: "https://colddm-kit.vercel.app/",
   },
+  {
+    title: "Outbound-OS",
+    description:
+      "A modular AI-powered outbound automation system designed to orchestrate marketing, research, and engineering agents across multiple channels.",
+    stack: ["Next.js", "Supabase", "OpenAI", "Vercel"],
+    liveUrl: "https://outbound-66evmftqt-alexs-projects-949dcdc1.vercel.app",
+  },
 ]
